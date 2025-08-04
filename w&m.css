@@ -1,0 +1,1430 @@
+/* Off-screen menu styles */
+.off-screen-menu {
+  background: linear-gradient(to left, #132A4D,  #2C786C);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: right 0.3s ease;
+  z-index: 999;
+
+}
+
+.off-screen-menu a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;         
+  max-width: 300px;
+  margin: 20px 0;
+}
+
+.off-screen-menu.active {
+  right: 0;
+}
+
+body {
+  padding-top: 150px;
+  margin: 0;
+  
+}
+/* Nav bar container */
+nav {
+  position: fixed;
+  margin-top: 0;
+  padding-top: 0.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, white 15%, #2C786C 70%, #132A4D 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flexs;
+  align-items: center;
+
+  
+}
+nav img{
+  height: 160px;
+}
+
+
+/* Hamburger menu button */
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(2) {
+  top: 50%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+
+/* Hamburger transforms to "X" */
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.nav-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav-title {
+  font-family: 'Almendra SC', serif;
+  font-size: 2.7rem; 
+  font-weight: bold;
+  color: #01182e;
+  margin: 0;
+
+}
+
+/* Container for search and hamburger menu */
+.nav-right {
+  display: flex;
+  align-items: center;
+  /*  the gap part is for space between search and hamburger */
+  gap: 0.8rem; 
+  margin-left: auto;
+}
+
+
+.nav-search input {
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 1 rem;
+  background-color: #a2aea8;
+  color: #0e2447;
+}
+
+.nav-search input::placeholder {
+  color: #888;
+}
+
+.paragraph-section {
+    position: relative;
+    background-image:
+    linear-gradient(to right, rgba(246, 235, 235, 0.693), rgba(248, 239, 239, 0.64)),
+    url('images/banner\ home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    min-height: 500px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 170px;
+   
+}
+/* text and video part text on the left and its video on the right*/
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+
+}
+/*start of text part*/
+.text-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 300px;
+  font-size: 1.3rem;
+}
+/*end of text part*/
+
+/*start of video part*/
+.video-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 350px;
+  height: 50px;
+
+  
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*end of video part*/
+
+/*green color text for wildlife text*/
+.wildlife-text {
+  color: rgb(2, 93, 2);
+  
+}
+/*blue color text for marine life text*/
+.marine-text {
+  color: rgb(4, 4, 167);
+}
+/*title for wildlife*/
+.title-Wildlife {
+  font-size: 35px;
+  color: rgb(2, 93, 2); ;
+}
+/*title for marine life*/
+.title-Marine {
+  font-size: 35px;
+  color: rgb(4, 4, 167); ;
+}
+
+.body + .body {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+
+/*size text for conservation text*/
+.title-conservation{
+   font-size: 35px;
+}
+
+/*footer content*/
+.footer-content {
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between; /* pushes logo left, links right */
+  align-items: center;
+  display: flex;
+
+  border-top: 5px solid #047715; /* Adjust thickness and color */
+
+ min-height: 150px;
+
+
+}
+
+
+
+
+.slider {
+      position: relative;
+      width: 100%;
+      
+      height: 600px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background: #04270d;
+      margin-top: 100px;
+}
+    .slides {
+      display: flex;
+       width: 200%; 
+       height: 100%;
+      transition: transform 3s ease-in-out;
+    }
+    .slides img {
+     width: 50%; /* each image takes half of 200% container */
+     height: 100%;
+     object-fit: cover;
+     user-select: none;
+      
+     
+
+  object-fit: contain; /* No cropping */
+}
+
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.4);
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      font-size: 24px;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+    .nav-btn:hover {
+      background-color: rgba(0,0,0,0.7);
+    }
+    .prev {
+      left: 20px;
+    }
+    .next {
+      right: 20px;
+    }
+
+    /*GIF wildlife*/
+
+    .wildlife-gifs {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f3f0e6; 
+    }
+.wildlife-gifs h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #5C4033;
+}
+
+.gif-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.gif-row a {
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.gif-row img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.gif-row a:hover {
+  transform: scale(1.1);
+}
+
+.gif-row p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.footer-social {
+  display: flex;
+  flex-direction: column;      /* Stack text above icons */
+  align-items: center;
+  justify-content: center;
+  gap: 0;                      /* No spacing between text and icons */
+  margin-bottom: 10px;
+}
+
+.footer-social p {
+  margin: 0;                  /* Remove default margin */
+  font-size: 16px;
+  color: white;
+}
+
+.footer .social-icons {
+  margin: 0;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 15px;             /* Spacing between icons */
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+ font-family: "Playfair", serif;
+   font-size: 24px;
+}
+
+body.bird-page {
+   padding-top: 0;
+}
+
+
+/*bird pic section*/
+.bird-pic {
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  float: left;
+  text-align: center;
+  font-family: 'Playfair', serif;
+  align-items: center;
+}
+
+.bird-pic img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+/* Always show the title below the image */
+.bird-pic h1 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Description box hidden over image */
+.bird-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.bird-pic:hover .bird-desc {
+  opacity: 1;
+}
+
+.bird-desc p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/*bird section title*/
+.title-bird p {
+  font-family: 'Playfair', serif; 
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #7bad07;
+
+}
+
+
+/*marine life*/
+.video-banner {
+  position: relative;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+
+
+    /*GIF marine life*/
+
+  .marinelife-gifs {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #c1d2e9; 
+}
+
+.marinelife-gifs h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #020751;
+}
+
+/*reptile */
+
+      .carousel-container {
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      }
+
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .carousel-item {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+        border-radius: 10px;
+      }
+
+      .caption {
+        font-size: 1.7em;
+        margin: 10px 0;
+        color: #2c786c;
+        font-weight: bold;
+      }
+
+      .carousel-item p {
+        font-size: 1.3em;
+        line-height: 1.6;
+        color: #333;
+      }
+
+       .btns {
+        text-align: center;
+        margin: 15px 0;
+      }
+
+      .btn {
+        background-color: #2c786c;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        margin: 0 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        background-color: #2ec009;
+        color: #000;
+      }
+
+      /*play and pause instruction*/
+    #carouselInstruction {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+.reptile-nav{
+  overflow: hidden;
+  margin: 0;
+  padding:0.3rem;
+}
+#reptile-body{
+
+  margin: 0;
+  padding: 0;
+  background: linear-gradient( to right,#0e351a, #0e6f1e, #0e351a);
+
+
+
+}
+
+/*mammals*/
+
+/* Overall Page Setup */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top thumbnail row */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: #f0f0f0;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.image-row img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.image-row img:hover {
+  border: 2px solid #333;
+}
+
+.image-row-title {
+  text-align: center;
+  padding: 20px 10px 0;
+  background: linear-gradient(to right, #fdf6ec, #e7d8c9); /* Cream to light tan */
+}
+
+.image-row-title h2 {
+  font-size: 2rem;
+  color: #5C4033; /* Earthy brown */
+  margin: 0;
+  font-weight: bold;
+}
+
+.image-row-title p {
+  font-size: 1.2rem;
+  color: #6b4f3b; /* Medium brown */
+  margin-top: 5px;
+}
+
+
+/* Info Sections Layout */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+  flex-direction: row; /* Text left, image right by default */
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ccc;
+
+background: linear-gradient(to right, #efebe9, #d7ccc8, #a1887f);
+
+
+
+
+}
+
+/* Reverse section: image left, text right */
+.info-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Images inside sections */
+.info-section img {
+  width: 300px;
+  height: auto;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+/* Text styling */
+.info-section .text {
+  max-width: 600px;
+}
+
+/* Headings */
+.info-section h1 {
+  margin-top: 0;
+}
+
+/* Section titles */
+.title-mammals p {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 20px 10px;
+  margin: 0;
+  color: #333;
+}
+
+/* Mobile layout fix */
+@media (max-width: 768px) {
+  .info-section,
+  .info-section.reverse {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .info-section img {
+    max-width: 100%;
+  }
+
+  .info-section .text {
+    max-width: 100%;
+  }
+}
+
+/*blur other unclicked part*/
+.info-section.blur {
+  filter: blur(4px);
+  opacity: 0.5;
+  pointer-events: none; 
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+
+/*plants */
+.plants-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.plants-page {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.plants-page .image-container {
+  position: relative;
+  width: 100%;
+}
+
+.plants-page .banner-image {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  height:690px;
+}
+
+.plants-page .read-more-button {
+  position: absolute;
+  bottom: 90px;
+  left: 68.5%;/*making it be below the word "of"*/
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.plants-page .read-more-button:hover {
+  background-color: #388E3C;
+}
+
+.plants-page .plant-info {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+ 
+}
+
+.plants-page .plant-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/*plants text and images*/
+
+.plant-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+
+
+}
+
+.plant-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Circular image */
+.plant-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Text next to the image */
+.plant-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .plant-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .plant-section.reverse {
+    flex-direction: column;
+  }
+
+  .plant-text {
+    text-align: center;
+  }
+}
+
+/*plants title*/
+.title-plants p {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 20px 10px;
+  margin: 0;
+  color: #b40c47;
+  
+}
+
+
+
+/*privacy*/
+.privacy p {
+  font-family: 'Playfair', serif; 
+  font-size: 40px;
+  color: #0e6f1e;
+}
+
+
+
+
+/*footer*/
+
+.site-footer {
+  background: linear-gradient(to right, #035920, #0093a6);
+  color: white;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left img {
+  height: 60px;
+}
+
+.footer-left .tagline {
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-center a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.footer-center a:hover {
+  color: #ffeb3b;
+}
+
+.footer-center .wildlife-fact {
+  margin-top: 15px;
+  font-size: 13px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right p {
+  margin-bottom: 10px;
+}
+
+.footer-right a {
+  color: white;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+
+.footer-bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.newsletter-form input {
+  flex: 1 1 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #004d33;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #007a50;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
+.reptile-title{
+  font-family: 'Playfair', serif; 
+  font-size: 60px;
+  text-align: center;
+  color: #eff3ef;
+}
+
+
+
+/*marine*/
+
+
+
+
+.info-section {
+  padding: 40px;
+  margin-top: 80px;
+  background-color: #e0f7fa;
+  border-radius: 10px;
+}
+.marine-categories {
+  display: flex;
+  flex-wrap: wrap;            /* Allows wrapping on smaller screens */
+  justify-content: center;    /* Centers content nicely */
+  gap: 20px;                  /* Adds spacing between images */
+  margin-bottom: 40px;
+}
+
+.marine-categories a {
+  display: block;
+  width: 150px;               /* Set a fixed width for consistency */
+  text-align: center;
+}
+
+.marine-categories img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.marine-categories img:hover {
+  transform: scale(1.05);
+}
+
+.marine-categories img[alt="Cnidarians"] {
+  width: 180px;         /* Adjust as needed */
+  height: 100px;
+  transform: scale(1);  /* Prevent scaling override from hover effect */
+}
+
+/*book*/
+
+
+.flipbook {
+  position: relative;
+  perspective: 1500px;
+}
+
+.page {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  animation: flipIn 0.6s ease-in-out;
+}
+
+.page h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.page-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+button.next-page,
+button.prev-page,
+button.close-book {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.next-page:hover,
+button.prev-page:hover,
+button.close-book:hover {
+  background-color: #023e8a;
+}
+
+button.close-book {
+  background-color: #d62828;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+button.close-book:hover {
+  background-color: #a4161a;
+}
+
+@keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+.book-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, #132A4D, #2C786C);
+  color: white;
+  z-index: 9999;
+  overflow-y: auto;
+  display: none; /* Hidden by default */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.book-content.active {
+  display: block;
+}
+
+.flipbook {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  color: #000;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.close-book {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #0077b6;
+  color: white;
+  font-size: 28px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #023e8a;
+}
+
+/*conservation method*/
+.pamphlet-links {
+  background-color: #e0f7fa;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.pamphlet-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 200px;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.pamphlet-links li a {
+  text-decoration: none;
+  color: #006d77;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.pamphlet-links li a:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+
+/*map*/
+.map-link-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #007b5e;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.map-link-button:hover {
+  background-color: #005f47;
+}
+
+
+/*box conservation*/
+.info-box {
+  background-color: #f0f8ff;
+  border-left: 6px solid #2e8b57;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.info-box h4 {
+  margin-top: 0;
+  color: #2e8b57;
+}
+
+
+
+.pamphlet h2, .pamphlet h3 {
+  color: #4b0082;
+}
+
+.pamphlet a {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.pamphlet a:hover {
+  text-decoration: underline;
+}
+
+/*ile pic*/
+.ile-images {
+  display: flex;
+  
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.ile-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #006d77;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info{
+  background-color: #f0f8ff;
+  border-left: 6px solid #0945b4;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Light green background for Wildlife section */
+#wildlife-pamphlet {
+  background-color: #d4edda;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Light blue background for Marine Life section */
+#marine-life-pamphlet {
+  background-color: #e0f0ff; /* soft ocean blue */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/*table*/
+#conservation-methods-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#conservation-methods-table th,
+#conservation-methods-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#conservation-methods-table thead {
+  background-color: #cce5ff;
+}
+
+#conservation-methods-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+/*bootstrap*/
+.navbar-custom {
+      background: linear-gradient(to right,#fff, #c6e0dc, #0b2d4e);
+      position: relative;
+    }
+
+    .navbar-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      font-weight: bold;
+      color: #061c3c;
+      white-space: nowrap;
+    }
+
+    .search-input {
+      border-radius: 25px;
+      padding: 5px 15px;
+      border: 1px solid #555;
+      width: 180px;
+      background-color: #b0c1ba;
+      color: #333;
+    }
+
+    .navbar-brand img {
+      height: 60px;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-title {
+        font-size: 1.5rem;
+      }
+
+      .search-input {
+        width: 120px;
+      }
+    }
+
+    /* Gallery Carousel - Unique styles */
+.gallery-carousel {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.gallery-track-wrapper {
+  overflow: hidden;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.gallery-track img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-track img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.gallery-carousel {
+  position: relative;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+
+
+.gallery-left {
+  left: 5px;
+}
+
+.gallery-right {
+  right: 5px;
+}
+
+.sitemap-list {
+    list-style: none;
+    padding-top: 110px;
+    max-width: 600px;
+  
+}
+
+.sitemap-list li {
+    margin: 10px 0;
+}
+
+
+.sitemap-list a {
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.sitemap-list a:hover {
+    color: #1abc9c;
+}
+

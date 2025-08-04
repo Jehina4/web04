@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+      <link rel="shortcut icon" href="images/Logo Wildlife and Marine life in Mauritius.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="w&m.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+<body>
+     <header>
+         <!-- // start of Nav content -->
+  <nav>
+   <img src="images/Logo Wildlife and Marine life in Mauritius.jpg" alt="Wildlife and Marine life in Mauritius" width="200" >
+  
+   <div class="nav-container">
+   <h1 class="nav-title">Wildlife in Mauritius</h1>
+  </div>
+
+   <div class="nav-right">
+   <form class="nav-search">
+    <input type="text" placeholder="Search..." />
+  </form>
+
+    
+    <div class="ham-menu" id="hamMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="off-screen-menu" id="offScreenMenu">
+      <a href="index.html">Home Page</a>
+      <a href="wildlife.html">Wildlife</a>
+      <a href="marinelife.html">Marine life</a>
+      <a href="conservation.html">Conservation methods</a>
+       <a href="gallery.html">Gallery</a>
+      <a href="about.html">About us</a>
+    
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <h1 class="gallery-title">Wildlife & Marine Gallery</h1>
+
+  <div class="gallery-carousel">
+    
+    
+    <div class="gallery-track-wrapper">
+      <div class="gallery-track">
+        <img src="images/Shells & Sea Slugs .jpg" alt="Gallery Image 1" >
+        <img src="images/marine1.jpg"alt="Gallery Image 2" >
+        <img src="images/Turbinaria.jpg" alt="Gallery Image 3">
+        <img src="images/tuna.jpg" alt="Gallery Image 4">
+        <img src="images/marinepic.jpg" alt="Gallery Image 5" >
+        <img src="images/shark and rays.jpg"alt="Gallery Image 6" >
+        <img src="images/Marine Mammals.jpg" alt="Gallery Image 7">
+        <img src="images/lionfish.jpg" alt="Gallery Image 8">
+        
+        <img src="images/clown fish.jpg"alt="Gallery Image 10" >
+        <img src="images/blue marlin.jpg" alt="Gallery Image 11">
+        <img src="images/angelfish.jpg" alt="Gallery Image 12">
+        <img src="images/MAURITIUS FLYING FOX.jpg" alt="Gallery Image 13" >
+        <img src="images/Kestrel.jpg"alt="Gallery Image 14" >
+        <img src="images/pink pigeon.jpg" alt="Gallery Image 15">
+        <img src="images/dodo.jpg" alt="Gallery Image 16">
+        <img src="images/ebony.jpg" alt="Gallery Image 17" >
+        <img src="images/bougainvillea.jpg"alt="Gallery Image 18" >
+        <img src="images/hibiscus.jpg" alt="Gallery Image 19">
+        <img src="images/flamboyant.jpg" alt="Gallery Image 20">
+       
+       
+        
+      </div>
+    </div>
+
+  </div>
+  
+<!--inline java script-->
+<script>
+    const hamMenu = document.getElementById('hamMenu');
+    const offScreenMenu = document.getElementById('offScreenMenu');
+
+    hamMenu.addEventListener('click', () => {
+      hamMenu.classList.toggle('active');
+      offScreenMenu.classList.toggle('active');
+    });
+  </script>
+<!--end of java script-->
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="images/Logo Wildlife and Marine life in Mauritius.jpg" alt="Wildlife and Marine Life in Mauritius Logo" />
+    <p class="tagline">Exploring Nature's Wonders in Mauritius</p>
+  </div>
+  <div class="footer-center">
+    <a href="sitemap.html">Sitemap</a>
+    <a href="privacy.html">Privacy Policy</a>
+    
+    <div class="wildlife-fact">🦜 Did you know? The pink pigeon is native to Mauritius.</div>
+  </div>
+  <div class="footer-right">
+    <p>Follow us on:</p>
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Subscribe for updates" />
+      <button type="submit">Join</button>
+    </form>
+  </div>
+  <div class="footer-bottom">
+     <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+  <img style="border:0;width:88px;height:31px"
+       src="https://jigsaw.w3.org/css-validator/images/vcss"
+       alt="Valid CSS!">
+</a>
+    <p>&copy; 2025 Wildlife and Marine Life in Mauritius | All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
