@@ -103,6 +103,7 @@ nav img{
   top: 50%;
   transform: translateX(-50%) rotate(-45deg);
 }
+
 .nav-container {
   position: absolute;
   left: 50%;
@@ -116,7 +117,6 @@ nav img{
   margin: 0;
 
 }
-
 /* Container for search and hamburger menu */
 .nav-right {
   display: flex;
@@ -1426,5 +1426,15 @@ button.close-book:hover {
 
 .sitemap-list a:hover {
     color: #1abc9c;
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  .nav-title {
+    font-size: 1rem;
+  }
 }
 
