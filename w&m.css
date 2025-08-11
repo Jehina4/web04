@@ -115,6 +115,7 @@ nav img{
   font-weight: bold;
   color: #01182e;
   margin: 0;
+  text-align: center;
 
 }
 /* Container for search and hamburger menu */
@@ -1221,36 +1222,43 @@ button.close-book:hover {
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
+    align-items: center;
 }
 
 .info-box h4 {
   margin-top: 0;
   color: #2e8b57;
+    align-items: center;
 }
 
 
 
 .pamphlet h2, .pamphlet h3 {
   color: #4b0082;
+    align-items: center;
 }
 
 .pamphlet a {
   text-decoration: none;
   color: #4b0082;
   font-weight: bold;
+    align-items: center;
 }
 
 .pamphlet a:hover {
   text-decoration: underline;
+    align-items: center;
 }
 
 /*ile pic*/
 .ile-images {
   display: flex;
+    align-items: center;
   
   gap: 2rem;
   margin: 2rem 0;
   flex-wrap: wrap;
+    
 }
 
 .ile-images img {
@@ -1260,6 +1268,8 @@ button.close-book:hover {
   border-radius: 50%;
   border: 3px solid #006d77;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    
 }
 .info{
   background-color: #f0f8ff;
@@ -1269,6 +1279,7 @@ button.close-book:hover {
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
   font-family: Arial, sans-serif;
+    align-items: center;
 }
 
 /* Light green background for Wildlife section */
@@ -1276,6 +1287,7 @@ button.close-book:hover {
   background-color: #d4edda;
   padding: 20px;
   border-radius: 10px;
+    align-items: center;
 }
 
 /* Light blue background for Marine Life section */
@@ -1283,12 +1295,14 @@ button.close-book:hover {
   background-color: #e0f0ff; /* soft ocean blue */
   padding: 20px;
   border-radius: 10px;
+    align-items: center;
 }
 
 /*table*/
 #conservation-methods-table table {
   width: 100%;
   border-collapse: collapse;
+  align-items: center;
 }
 
 #conservation-methods-table th,
@@ -1296,14 +1310,17 @@ button.close-book:hover {
   border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
+    align-items: center;
 }
 
 #conservation-methods-table thead {
   background-color: #cce5ff;
+    align-items: center;
 }
 
 #conservation-methods-table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
+    align-items: center;
 }
 
 
@@ -1321,7 +1338,8 @@ button.close-book:hover {
       font-weight: bold;
       color: #061c3c;
       white-space: nowrap;
-    }
+      
+       }
 
     .search-input {
       border-radius: 25px;
@@ -1352,7 +1370,7 @@ button.close-book:hover {
       }
     }
 
-    /* Gallery Carousel - Unique styles */
+    /* Gallery Carousel  */
 .gallery-carousel {
   position: relative;
   width: 80%;
@@ -1437,4 +1455,96 @@ button.close-book:hover {
     font-size: 1rem;
   }
 }
+
+
+.conservation-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; 
+}
+.conservation-container img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  nav {
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    gap: 6px;
+    align-items: center;
+  }
+
+
+  nav > img {
+    max-height: 60px;    
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    order: 1;
+  }
+
+
+  .nav-container {
+    position: static !important;   
+    left: auto !important;
+    transform: none !important;
+    order: 2;                     
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    box-sizing: border-box;
+  }
+
+  /* smaller, wrapped title  */
+  .nav-title {
+    font-size: 18px;    
+    white-space: normal; 
+    text-align: center;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  /* put search + hamburger below the title and center them */
+  .nav-right {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+
+  /* shrink the search input  */
+  .nav-search input {
+    width: 150px;
+    max-width: 70%;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  
+  .ham-menu {
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .nav-title { font-size: 16px; }
+  nav > img { max-height: 50px; }
+  .nav-search input { width: 120px; }
+}
+
+
+
+
+
 
